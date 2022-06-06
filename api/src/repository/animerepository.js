@@ -14,4 +14,6 @@ export async function consultarAnime(){
     const comando = 
     `select * from tb_anime`;
     const [resposta] = await con.query(comando);
+
+    return resposta
 }

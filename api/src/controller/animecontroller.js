@@ -13,7 +13,7 @@ server.post('/anime', async (req,resp) => {
 
 server.get('/animes', async (req,resp) =>{
     const resposta = await consultarAnime();
-    resp.send({x:resposta})
+    resp.send({resposta})
     console.log('tst')
 })
 
