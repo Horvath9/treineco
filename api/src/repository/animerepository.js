@@ -7,7 +7,7 @@ export async function inserirAnime(nome){
     
     const [resposta] = await con.query(comando, [nome.nome]);
 
-    return resposta
+    return resposta.affectedRows
 }
 
 export async function consultarAnime(){

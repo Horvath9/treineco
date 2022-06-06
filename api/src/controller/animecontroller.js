@@ -14,7 +14,6 @@ server.post('/anime', async (req,resp) => {
 server.get('/animes', async (req,resp) =>{
     const resposta = await consultarAnime();
     resp.send({resposta})
-    console.log('tst')
 })
 
 export default server
