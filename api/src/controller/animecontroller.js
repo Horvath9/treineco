@@ -13,7 +13,7 @@ server.post('/anime', async (req,resp) => {
 
 server.get('/animes', async (req,resp) =>{
     const resposta = await consultarAnime();
-    resp.send({resposta})
+    resp.send(resposta)
 })
 
 export default server
